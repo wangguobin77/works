@@ -1,0 +1,204 @@
+@import "base.css";
+body,html{
+	height: 100%;
+	font-size: 14px;
+}
+.lys_header{
+	width: 100%;
+	height: 3.5rem;
+	position: relative;
+	padding: 0 0.2rem;
+	/*box-shadow: 0 10 */
+	background: url(../images/l/tou.png) no-repeat 0px/650px;
+}
+.lys_header img{
+	width:0.66rem;
+	margin-top: 0.1rem;
+}
+.lys_header h1{
+	color: #fff;
+	position: absolute;
+	left: 2.55rem;
+	bottom: 0.25rem;
+	font-weight: bolder;
+}
+.lys_txphoto{
+	width: 2.15rem;
+	height: 2.15rem;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	position: absolute;
+	bottom: -30%;
+	z-index: 666;
+	background: url(../images/l/tx.png) no-repeat center center/cover;
+}
+
+/*列表开始*/
+.lys_box{
+	width: 100%;
+	height: 100%;
+	padding: 0.1rem 0.2rem;
+	background: #F4EAD5;
+}
+.lys_xinx{
+	overflow: hidden;
+	margin-left: 2.2rem;
+}
+.lys_xx_lis{
+	float: left;
+	margin-right: 0.14rem;
+}
+.lys_xx_lis img{
+	width: 0.35rem;
+}
+.lys_xx_lis span{
+	line-height: 0.35rem;
+}
+
+.lys_uls{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	margin-top: 0.26rem;
+	margin-bottom: 0.7rem;
+}
+.lys_gdbj{
+	width: 100%;
+	height: 100%;
+	background: url(../images/l/gdbj.png) no-repeat;
+	background-size: 2.56rem;
+	position: relative;
+}
+.lys_gdbj a{
+	display: block;
+	width: 2.85rem;
+	height: 1.6rem;
+	position: absolute;
+	left: 21px;
+	top: -19px;
+}
+.lys_lis{
+	width: 3.48rem;
+	/*height: 2.3rem;*/
+	background: #fff;
+	position: relative;
+	margin-top: 0.18rem;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.lys_jiao{
+	position: absolute;
+	bottom: -0.03rem;
+	left: 0.03rem;
+}
+.lys_jiao img{
+	height: 0.36rem;
+}
+.lys_lis_a{
+	display: inline-block;
+}
+.lys_lis_top{
+	width: 100%;
+	overflow: hidden;
+	/*background: #252424;*/
+	padding: 0.15rem;
+	position: relative;
+	background: url(../images/l/dianm.png) no-repeat center center/cover;
+}
+.lys_lis_active{
+	background: url(../images/l/123.png) no-repeat center center/cover;
+}
+.lys_lis_top img{
+	float: right;
+	width: 0.64rem;
+}
+.lys_top_left{
+	float: left;
+}
+.lys_top_left b{
+	/*font-size: 24px;*/
+	color: #84A747;
+	font-style: normal;
+}
+.lys_top_left i{
+	/*font-sizes: 30px;*/
+	display: block;
+	color: #84A747;
+	font-style: normal;
+}
+.lys_lis_zhong{
+	width: 100%;
+	padding: 0.05rem 0.15rem;
+	background: #fff;
+	font-size: 14px;
+	background: url(../images/l/dian.png) no-repeat center 32px;
+}
+.lys_lis_zhong p{
+	font-size: 12px;
+	color: #908F8F;
+}
+.lys_lis_zhong span{
+	font-size: 12px;
+	color: #C5C5C5;
+}
+.lys_lis_xia{
+	width: 100%;
+	padding:0.05rem 0.15rem;
+	overflow: hidden;
+	background: #fff;
+
+}
+.lys_xia_span1{
+	float: right;
+	text-align: right;
+	color: red;
+	font-size: 28px;
+}
+.lys_xia_spson{
+	font-size: 12px;
+	color: #C1C1C1;
+}
+
+
+/*摇一摇*/
+#lys_id{
+	display: flex;
+	height: 100%;
+	flex-direction:column;
+	position: relative;
+}
+.lys_yiy_top{
+	display: flex;
+	flex:0 0 auto;
+	width: 100%;
+	padding: 0.12rem 0.15rem;
+	background: #252424;
+	justify-content:space-between;
+}
+.lys_yiy_top a{
+	display: block;
+	width: 33.333%;
+}
+.lys_yiy_top a img{
+	width: 0.66rem;
+}
+.lys_top_center{
+	width: 33.333%;
+	text-align: center;
+	color: #A8D655;
+}
+#lys_yiy_a{
+	text-align: right;
+}
+.lys_yiy_xia{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-grow:1;
+}
+.lys_yiy_js{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}

@@ -1,0 +1,254 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica";
+	background: #F4EAD5;
+
+}
+header{
+	height: 1.77rem;
+	background: #252424;
+	box-sizing:border-box;
+	padding-left:.15rem;
+	padding-right: .15rem;
+}
+
+.jcl-top{
+	height: 50%;
+	width: 100%;
+    overflow: hidden;
+	font-size: 12px;
+	text-align: center;
+	box-sizing:border-box;
+    color: #82A445;
+
+}
+.jcl-top:after{
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+}
+.jcl-top a{
+	display: block;
+	float: left;
+	margin-top: .1rem;
+
+
+}
+.jcl-top a{
+	height:.7rem;
+	width: .7rem; 
+	border-radius: 50%;
+
+}
+.jcl-top span{
+	display: block;
+	margin-top: 0.15rem;
+
+}
+.jcl-bot{
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	padding-left:.2rem;
+	padding-right: .2rem;
+}
+.jcl-bot span>img{
+	width: 1.95rem;
+	height:0.64rem;
+	position: absolute;
+}
+.jcl-bot span{
+	display: block;
+	width: 1.95rem;
+	height: 0.64rem;
+	position: relative;
+	cursor: pointer;
+}
+.jcl-bot span.active{
+	background: url(../images/jcl//ld.png) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.jcl-bot a{
+	display: block;
+	position: absolute;
+	left:0;
+	top:0;
+	text-decoration: none;
+	width: 1.95rem;
+	height: 0.64rem;
+	display: flex;
+	align-items:center;
+	justify-content:space-around;
+}
+.jcl-bot a img:first-child{
+	height:.37rem;
+	width: .77rem; 
+}
+.jcl-bot a img:nth-child(2){
+	height:.37rem;
+	width: .37rem; 
+	margin-left: -0.4rem;
+}
+/*.jcl-bot span:first-child~span>img{
+	display: :none;
+}*/
+.jcl-one{
+	width: 100%;
+	overflow: hidden;
+
+}
+.jcl-lists{
+	width:300%;
+	display: flex;
+	flex-direction:row;
+}
+.jcl-list{
+	display: flex;
+	flex-direction:row;
+	/*justify-content:space-between;*/
+	flex-wrap:wrap;
+	background: #191818;
+	width: 33.333333%;
+	
+}
+.jcl-list a{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	text-decoration: none;
+	box-sizing:border-box;
+	width: 25%;
+	margin-top:.5rem;
+	-webkit-tap-highlight-color:rgba(0,0,0,0)
+    
+}
+.jcl-list a:nth-child(11)~a{
+   margin-bottom: .5rem;
+}
+
+.jcl-list a img{
+	height:1.3rem;
+	width: 1.3rem; 
+}
+.jcl-list a span{
+	font-size: 12px;
+	color:#C5BDAB; 
+	white-space: nowrap;
+}
+.jcl-img{
+	
+	width: 100%;
+	background: url(../images/jcl//iyou.png) no-repeat center center;
+    height: 1.4rem
+}
+.jcl-imgbox{
+	width: 100%;
+	padding-left: .15rem;
+	padding-right: .15rem;
+	padding-top: .1rem;
+	padding-bottom: .1rem;
+	box-sizing:border-box;
+}
+.jcl-two{
+	padding-left: .15rem;
+	padding-right: .15rem;
+}
+.jcl-twos{
+	height: 1.3rem;
+	background: #fff;
+	display: flex;
+	flex-direction:row;
+	margin-bottom: .05rem;
+	text-decoration: none;
+	color: #616161;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.jcl-twos-left{
+	height: 100%;
+	width: 1.3rem;
+    
+	
+   
+}
+.jcl-twos-right{
+	width:82%;
+	/*background: yellow;*/
+	height: 100%;
+	display: flex;
+	box-sizing:border-box;
+	flex-direction:column;
+	padding-right: .15rem;
+	
+}
+.jcl-twos-top{
+	height: .87rem;
+	width: 100%;
+	box-sizing:border-box;
+	/*background: green;*/
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	border-bottom: 1px dashed #E1DCD3;
+	padding-left: .1rem;
+
+}
+.jcl-twos-zuo{
+	font-size: 10px;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	width: 60%;
+	
+
+	
+}
+.jcl-twos-zuo span:nth-child(2){
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.jcl-twos-you{
+	display: flex;
+	flex-direction:row;
+	font-size: 10px;
+	align-items:flex-end;
+
+	
+	
+	
+
+}
+.jcl-twos-bottom{
+	font-size: 10px;
+	color: #B7B7B7;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	height:.45rem;
+
+}
+.jcl-twos-lefts{
+	height: 100%;
+	display: flex;
+	flex-direction:row;
+	align-items:center;
+	padding-left: .1rem;
+}
+.jcl-twos-lefts span{
+	display:inline-block;
+    height:.24rem;
+    width: .24rem;
+
+}
+.jcl-twos-lefts span img{
+	height:.24rem;
+    width: .24rem;
+}
+.jcl-twos-bottom-right img{
+	width: .24rem;
+	height: .24rem;
+}

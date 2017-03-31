@@ -1,0 +1,322 @@
+@import url(base.css);
+body{
+	box-sizing:border-box;
+	background: #F4EAD5;
+	user-select :none;
+
+}
+*{
+	margin: 0;
+	padding:0;
+}
+html{
+	height:100%;
+}
+p{
+	padding: 0;
+	margin:0;
+}
+body{
+	height: 100%;
+	font-family: Helvetica, sans-serif,"苹方";
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.wgb-head{
+	height: 0.98rem;
+	width: 100%;
+	background: #262525;
+	box-sizing:border-box;
+}
+
+.wgb-head .left{
+	width: 0.77rem;
+	height: 0.77rem;
+	float: left;
+	padding-left: 0.15rem;
+
+}
+.wgb-head .left img{
+	width: 0.77rem;
+	height: 0.77rem;
+	vertical-align: center;
+	margin-top: 3px;
+
+}
+.wgb-head .middle{
+	display: flex;
+	flex-direction:column;
+    justify-content: center;
+	width: 2.6rem;
+	height: 100%;
+	margin-left: 35%;
+	font-size:12px;
+	color:#9BC950; 
+	padding-top: 5px;
+	text-align: center;
+
+
+}
+.wgb-head .middle h2{
+	display: inline-block;
+	text-align: center;
+	margin-left: 0.3rem;
+	align-self:center;
+}
+
+.wgb-head .middle h4{
+	font-size: 12px;
+
+}
+
+
+	/*<!-- 内容开始 -->*/
+
+
+.wgb-nav{
+	width: 100%;
+	height: auto;
+	background: #F4EAD5;
+	position: relative;
+
+}
+.wgb-nav .yy{
+	position: absolute; 
+	margin: 0;
+	height: 1.45rem;
+	background:#F4EAD5;
+
+}
+.wgb-nav .yy img{
+	width: 7.2rem;
+	display: block;
+	margin: 0 auto;
+	margin-top: -10px;
+}
+.wgb-nav .sj{
+	width: 100% ;
+	margin-left: 0;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+
+}
+.wgb-nav .sj a img{
+	margin-top: 1.7rem;
+	width: 85%;
+}
+.wgb-jzrq {
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+
+
+}
+.wgb-jzrq a img{
+	width: 100%;
+
+}
+
+.wgb-ydl{
+	height: 1.6rem;
+	width: 100%;
+	background: #F4EAD5;
+}
+
+.wgb-ydl a  img{
+	padding-left: 0.2rem;
+	padding-right: 0.2rem;
+	width: 95%;
+}
+
+
+
+
+/*<!-- 底部开始 -->*/
+.fenlei{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	background: #F4EAD5;
+	margin-top: 0;
+}
+.fenlei figure{
+	width: 2.3rem;
+	height: 2.7rem;
+	margin-top: 0.16rem;
+
+}
+.fenlei figure a img{
+	width: 100%;
+}
+
+.tuijian{
+	width: 100%;
+	height: auto;
+	margin-top: 0.18rem;
+	background: #F4EAD5;
+}
+.tuijian .top{
+	width: 7.2rem;
+	height: 1.9rem;
+	margin: 0 auto;
+}
+.tuijian .top a img{
+	width: 100%;
+}
+.tuijian .bottom{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.tuijian .bottom figure{
+	width: 7.16rem;
+	height: 1.3rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	margin:0 auto;
+	margin-bottom: 0.04rem;
+	display: flex;
+}
+.tuijian .bottom figure .left{
+	width: 1.3rem;
+	height: 1.3rem;
+	position: relative;
+	flex:0 0 auto;
+}
+.tuijian .bottom figure .left img:first-child{
+	width: 100%;
+}
+
+.tuijian .bottom figure .right{
+	flex:1 0 auto;
+	display: flex;
+	flex-direction:column;
+
+}
+.tuijian .bottom figure .right .work{
+	width: 100%;
+	height: 65%;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	border-bottom: 1px dashed #C4C3C2;
+}
+.tuijian .bottom figure .right .work .workcon{
+	width: 4.2rem;
+	padding-left:0.18rem;
+	font-size: 12px;
+	color: #000;
+	box-sizing:border-box;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-around;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	padding-right: 0.2rem;
+
+}
+.tuijian .bottom figure .right .work .workcon span{
+	width: 100%;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	font-family: Helvetica, sans-serif,"苹方";
+}
+.tuijian .bottom figure .right .work .workcon span:last-child{
+	font-size: 10px;
+	color: #C4C3C2;
+}
+.tuijian .bottom figure .right .work .salary{
+	height: 100%;
+	width: 1.6rem;
+	font-size: 10px;
+	color: #C4C3C2;
+	margin-top: 0.2rem;
+}
+.tuijian .bottom figure .right .work .salary span{
+	font-size:20px;
+	color: #FF163C;
+}
+.tuijian .bottom figure .right .pinglun{
+	width: 100%;
+	height: 35%;
+	padding-left:0.18rem;
+	padding-right: 0.15rem;
+	box-sizing:border-box;
+	font-size: 10px;
+	color: #C4C3C2;
+}
+.tuijian .bottom figure .right .pinglun span{
+	margin-top: 0.1rem;
+	float: left;
+}
+.tuijian .bottom figure .right .pinglun span:last-child{
+	float:right;
+}
+.tuijian .bottom figure .right .pinglun span:nth-child(1) i{
+	display: inline-block;
+	width: 0.24rem;
+	height: 0.22rem;
+	background: url(../images/wgb/wgbfade.png) no-repeat center center/cover;
+	margin-right: 0.15rem;
+}
+.tuijian .bottom figure .right .pinglun span:nth-child(1){
+	margin-right: 0.24rem;
+}
+.tuijian .bottom figure .right .pinglun span:nth-child(2) i{
+	display: inline-block;
+	width: 0.24rem;
+	height: 0.22rem;
+	margin-right: 0.15rem;
+	background: url(../images/wgb/wgbx.png) no-repeat center center/cover;
+	margin-right: 0.15rem;
+}
+.tuijian .bottom figure .right .pinglun span:last-child a img{
+	width: 0.24rem;
+	height: 0.23rem;
+}
+.wgb-dibu{
+	height:0.7rem;
+	bottom: 0;
+	margin-left: 0;
+	
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	width: 100%;
+	background: #F4EAD5;
+}
+
+
+.wgb-dibu .rotate{
+	margin-top: 0.02rem;
+	display: block;
+	transition:all 2s;
+	animation-name:rotate;
+	animation-duration:10000000000s;
+	animation-timing-function:ease;
+	animation-delay:0s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate;
+	);
+
+
+}
+@keyframes rotate{
+	from{
+
+		transform:rotate(0deg);
+	}
+	
+	to{
+		opacity: 1;
+		transform:rotate(3600000000000deg);
+	}
+}

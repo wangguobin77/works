@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+	<title>闪屏</title>
+	<link rel="stylesheet" href="css/xq_css/base.css">
+	<link rel="stylesheet" href="css/xq_css/xq_sp.css">
+	<script src='js/xq_js/rem.js'></script>
+</head>
+<body>
+	<!-- 闪屏 -->
+	<div class="spy">
+		<span>广告<i id="m" >3</i></span>
+		<a href="index.html">
+			<img src="images/xq_img/welcome.png" alt="">
+		</a>
+	</div>
+</body>
+</html>
+<script>
+	var m=document.querySelector('#m');
+	var a=document.querySelector('.spy a');
+	console.log(m);
+	var num=3;
+	var t=setInterval(function(){
+		num--;
+		m.innerHTML=num;
+		if(num==0){
+			clearInterval(t);
+			location.href='index.html';
+			
+		}
+	},1000)
+			
+
+</script>

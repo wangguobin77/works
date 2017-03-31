@@ -1,0 +1,62 @@
+
+body,html{
+	height: 100%;
+	user-select:none;
+}
+.spy{
+	position: absolute;
+	top:0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	display: flex;
+	justify-content:center;
+	background: url(../../images/xq_img/spbj.png) no-repeat center center/cover;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+
+.spy span{
+	font-size: 18px;
+	color:#000;
+	margin:0.1rem 0.15rem 0 0;
+	padding:0.08rem;
+	position: absolute;
+	right:0;
+	top:0;
+	background: rgba(132,140,90,0.5);
+}
+.spy span i{
+	font-style:normal;
+}
+.spy a{
+	display: block;
+	width:3.19rem;
+	height:2.32rem;
+	position: absolute;
+	bottom:0.71rem;
+}
+.spy a img{
+	width:3.19rem;
+	height:2.32rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

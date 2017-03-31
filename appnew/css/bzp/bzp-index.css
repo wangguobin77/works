@@ -1,0 +1,440 @@
+html,body{
+	height: 100%;
+	background: #F4EAD5;
+}
+.cehua{
+	width: 4.8rem;
+	height: 100%;
+	position:fixed;
+	z-index: 999;
+	left:-8rem;
+	opacity: 0;
+	top: 0;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+#mask{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index:-1;
+	opacity: 0;
+	transition:all 1s;
+	-webkit-transition:all 1s;
+}
+#mask.active{
+	opacity: 1;
+	background:rgba(0,0,0,0.7);
+	z-index:100;
+}
+.cehua .chose-city{
+	width: 4.8rem;
+	height: 100%;
+	position: absolute;
+	left:0;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	flex-direction:column;
+}
+.cehua.active{
+	left: 0;
+	opacity: 1;
+}
+.cehua .chose-city .top{
+	width: 100%;
+	height: 0.86rem;
+	background: #252424;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	flex:0 0 auto;
+}
+.cehua .chose-city .top img{
+	width: 1.36rem;
+}
+.cehua .chose-city .bottom{
+	background: url(../../images/bzp/bg_03.png) no-repeat center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	flex:1 0 auto;
+}
+.cehua .chose-city .bottom .nowcity{
+	width: 100%;
+	height: 1.54rem;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.cehua .chose-city .bottom .nowcity img{
+	width: 1.08rem;
+	height: 1.08rem;
+}
+.cehua .chose-city .bottom .nowcity span{
+	font-size: 14px;
+	color: #fff;
+	margin-left: 0.1rem;
+}
+.cehua .chose-city .bottom .citylist{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.cehua .chose-city .bottom .citylist li{
+	width: 4.27rem;
+	height: 0.68rem;
+	margin-bottom: 0.15rem;
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:0 0.2rem;
+	box-sizing:border-box;
+}
+.cehua .chose-city .bottom .citylist li i{
+	display: block;
+	width:0.43rem;
+	height: 0.44rem;
+	background: url(../../images/bzp/dw2.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+.cehua .chose-city .bottom .citylist li.act{
+	color: #000;
+	background: url(../../images/bzp/dw4.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+.cehua .chose-city .bottom .citylist li.act i{
+	background: url(../../images/bzp/dw3.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+/*头部*/
+.head{
+	position: relative;
+	z-index:80;
+	width: 100%;
+	height: 1.62rem;
+	background: url(../../images/bzp/dbeijing.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+}
+.head .headcon{
+	width: 100%;
+	height:0.74rem;
+	display: flex;
+	padding: 0.16rem 0.12rem 0 0.12rem;
+	justify-content:space-between;
+	box-sizing:border-box;
+	align-items:center;
+}
+.head .headcon .dw{
+	height: 0.7rem;
+}
+.head .headcon .dw>img{
+	height:100%;
+	float: left;
+}
+.head .headcon .dw span{
+	float: left;
+	height: 0.7rem;
+	font-size: 12px;
+	color: #fff;
+	padding-left: 0.2rem;
+	line-height: 0.7rem;
+}
+.head .headcon .dw span img{
+	width:0.12rem;
+	height:0.07rem;
+	margin-left: 0.1rem;
+	vertical-align: middle;
+}
+.head .headcon .logo img{
+	height: 0.86rem;
+}
+.head .headcon .user img{
+	height: 0.74rem;
+}
+.head .search{
+	position: relative;
+}
+.head .search input{
+	font-size: 12px;
+	position: absolute;
+	padding-left: 1.2rem;
+	box-sizing:border-box;
+	left: 0.4rem;
+	width: 6.77rem;
+	height: 1.51rem;
+	line-height: 1.51rem;
+	padding-top: 0.30rem;
+	background: url(../../images/bzp/sousuok.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	padding-right: 1.5rem;
+	color: #fff;
+}
+
+.head .search input::-webkit-input-placeholder{
+	color: #E0FC9F;
+}
+.head .search a:first-child{
+	display: block;
+	width: 0.46rem;
+	height: 0.45rem;
+	background: url(../../images/bzp/sousuo.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	position: absolute;
+	left: 1.1rem;
+	top: 0.68rem;
+	z-index: 10;
+}
+.head .search a:last-child{
+	display: block;
+	width: 0.37rem;
+	height: 0.38rem;
+	background: url(../../images/bzp/yuying.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	position: absolute;
+	z-index: 10;
+	right: 1.3rem;
+	top: 0.56rem;
+}
+/*banner*/
+.banner{
+	width: 100%;
+	height: 4.8rem;
+	margin-top:-0.42rem;
+	position: relative;
+	overflow: hidden;
+}
+.banner .swiper-wrapper .swiper-slide a img{
+	height: 4.8rem;
+}
+.banner .swiper-pagination{
+	background: rgba(0,0,0,0.5);
+	height: 0.7rem;
+	text-align: right;
+	line-height: 0.7rem;
+}
+.banner .swiper-pagination-bullet{
+	background: transparent;
+	border: 1px solid #fff;
+}
+.banner .swiper-pagination-bullet-active{
+	background: #fff;
+}
+.banner .font{
+	position: absolute;
+	width: 70%;
+	font-size:12px;
+	color: #fff;
+	z-index: 20;
+	bottom: 0.15rem;
+	left: 0.3rem;
+}
+.banner .font p{
+	font-size:10px;
+}
+.banner .font p:last-child{
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+/*分类*/
+.fenlei{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+.fenlei figure{
+	width: 2.3rem;
+	height: 2.7rem;
+	margin-top: 0.16rem;
+}
+.fenlei figure a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.fenlei figure a img{
+	width: 100%;
+}
+
+.tuijian{
+	width: 100%;
+	height: auto;
+	margin-top: 0.18rem;
+	margin-bottom: 1.57rem;
+}
+.tuijian .top{
+	width: 7.2rem;
+	height: 1.9rem;
+	margin: 0 auto;
+}
+.tuijian .top a img{
+	width: 100%;
+}
+.tuijian .bottom{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.tuijian .bottom figure{
+	width: 7.16rem;
+	height: 1.3rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	margin:0 auto;
+	margin-bottom: 0.04rem;
+	display: flex;
+}
+.tuijian .bottom figure .left{
+	width: 1.3rem;
+	height: 1.3rem;
+	position: relative;
+	flex:0 0 auto;
+}
+.tuijian .bottom figure .left img:first-child{
+	width: 100%;
+}
+.tuijian .bottom figure .left img:last-child{
+	width:0.43rem;
+	height: 0.43rem;
+	position: absolute;
+	top:-0.1rem;
+	left:-0.06rem;
+}
+.tuijian .bottom figure .right{
+	flex:1 0 auto;
+	display: flex;
+	flex-direction:column;
+
+}
+.tuijian .bottom figure .right .work{
+	width: 100%;
+	height: 65%;
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between;
+	border-bottom: 1px dashed #C4C3C2;
+}
+.tuijian .bottom figure .right .work .workcon{
+	width: 4.2rem;
+	padding-left:0.18rem;
+	font-size: 12px;
+	color: #000;
+	box-sizing:border-box;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-around;
+	padding-right: 0.2rem;
+	flex:0 0 auto;
+
+}
+.tuijian .bottom figure .right .work .workcon p{
+	width: 100%;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+.tuijian .bottom figure .right .work .workcon p:last-child{
+	font-size: 10px;
+	color: #C4C3C2;
+}
+.tuijian .bottom figure .right .work .salary{
+	height: 100%;
+	flex:1 0 auto;
+	font-size: 10px;
+	color: #C4C3C2;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.tuijian .bottom figure .right .work .salary span{
+	font-size:18px;
+	color: #FF163C;
+}
+.tuijian .bottom figure .right .pinglun{
+	width: 100%;
+	height: 35%;
+	padding-left:0.18rem;
+	padding-right: 0.15rem;
+	box-sizing:border-box;
+	font-size: 14px;
+	color: #C4C3C2;
+	line-height: 100%;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.tuijian .bottom figure .right .pinglun div>span:nth-child(1) i{
+	display: inline-block;
+	width: 0.24rem;
+	height: 0.22rem;
+	background: url(../../images/bzp/feedback.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	margin-right: 0.15rem;
+}
+.tuijian .bottom figure .right .pinglun div>span:nth-child(1){
+	margin-right: 0.15rem;
+}
+.tuijian .bottom figure .right .pinglun div>span:nth-child(2) i{
+	display: inline-block;
+	width: 0.24rem;
+	height: 0.22rem;
+	margin-right: 0.15rem;
+	background: url(../../images/bzp/favourite2.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover;
+	margin-right: 0.15rem;
+}
+.tuijian .bottom figure .right .pinglun>span:last-child a img{
+	width: 0.24rem;
+	height: 0.23rem;
+}
+
+/*底部*/
+.foot{
+	padding-top: 0.1rem;
+	box-sizing:border-box;
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	position:fixed;
+	bottom: 0;
+	z-index:99;
+	width: 100%;
+	height: 1.57rem;
+	margin-bottom:-0.08rem;
+	background: url(../../images/bzp/dibeijing.png) no-repeat center center;
+	-webkit-background-size:cover;
+	background-size:cover; 
+}
+.foot a{
+	display: block;
+	flex:1 0 auto;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.foot a:first-child img{
+	width: 1.76rem;
+	height: 1.19rem;
+}
+.foot a:first-child~a img{
+	width:0.96rem;
+	height: 0.99rem;
+}

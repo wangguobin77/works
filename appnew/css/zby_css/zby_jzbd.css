@@ -1,0 +1,318 @@
+body{
+	font-family: "苹方";
+	background: #F4EAD5;
+	user-select:none;
+}
+html {
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+}
+html::-webkit-scrollbar{width:0px}
+
+/*头部*/
+.head{
+	position: relative;
+	z-index:80;
+	width: 100%;
+	height: 1.62rem;
+	background: url(../../images/bzp/dbeijing.png) no-repeat center center/cover;
+}
+.head .headcon{
+	width: 100%;
+	height:0.74rem;
+	display: flex;
+	padding: 0.16rem 0.12rem 0 0.12rem;
+	justify-content:space-between;
+	box-sizing:border-box;
+	align-items:center;
+}
+.head .headcon .dw{
+	height: 0.7rem;
+	line-height: 0.7rem;
+}
+.head .headcon .dw>img{
+	height:100%;
+	float: left;
+}
+.head .headcon .dw span{
+	float: left;
+	font-size: 12px;
+	color: #fff;
+	padding-left: 0.2rem;
+}
+.head .headcon .dw span img{
+	width:0.12rem;
+	height:0.07rem;
+	margin-left: 0.1rem;
+	vertical-align: middle;
+}
+.head .headcon .logo img{
+	height: 0.86rem;
+}
+.head .headcon .user img{
+	height: 0.74rem;
+}
+.head .search{
+	position: relative;
+}
+.head .search input{
+	font-size: 12px;
+	position: absolute;
+	padding-left: 1.2rem;
+	box-sizing:border-box;
+	left: 0.4rem;
+	width: 6.77rem;
+	height: 1.51rem;
+	padding-top: 0.30rem;
+	background: url(../../images/bzp/sousuok.png) no-repeat center center/cover;
+}
+
+.head .search input::-webkit-input-placeholder{
+	color: #E0FC9F;
+}
+.head .search a:first-child{
+	display: block;
+	width: 0.46rem;
+	height: 0.45rem;
+	background: url(../../images/bzp/sousuo.png) no-repeat center center/cover;
+	position: absolute;
+	left: 1.1rem;
+	top: 0.68rem;
+	z-index: 10;
+}
+.head .search a:last-child{
+	display: block;
+	width: 0.37rem;
+	height: 0.38rem;
+	background: url(../../images/bzp/yuying.png) no-repeat center center/cover;
+	position: absolute;
+	z-index: 10;
+	right: 1.3rem;
+	top: 0.56rem;
+}
+/*banner*/
+.banner{
+	width: 100%;
+	height: 4.8rem;
+	margin-top:-0.42rem;
+	position: relative;
+	overflow: hidden;
+}
+.banner .swiper-wrapper .swiper-slide a img{
+	height: 4.8rem;
+}
+.banner .swiper-pagination{
+	background: rgba(0,0,0,0.5);
+	height: 0.7rem;
+	text-align: right;
+	line-height: 0.7rem;
+}
+.banner .swiper-pagination-bullet{
+	background: transparent;
+	border: 1px solid #fff;
+}
+.banner .swiper-pagination-bullet-active{
+	background: #fff;
+}
+.banner .font{
+	position: absolute;
+	width: 70%;
+	font-size:12px;
+	color: #fff;
+	z-index: 20;
+	bottom: 0.15rem;
+	left: 0.3rem;
+}
+.banner .font p{
+	font-size:10px;
+}
+.banner .font p:last-child{
+	white-space: nowrap;
+	text-overflow:ellipsis;
+	overflow: hidden;
+}
+/*<!-- 简直宝典开始 -->*/
+.zby_jzbox{
+	width: 100%;
+	height: auto;
+	
+	padding: 0.1rem 0.2rem 0 0.2rem;
+}
+.zby_jzbox .zby_jz{
+	width: 100%;
+	height: auto;
+}
+.zby_jzbox .hot{
+	width: 100%;
+	height: 1.9rem;
+	margin-bottom: 0.1rem;
+}
+.zby_jzbox .zby_jlis{
+	width: 100%;
+	height: 1.9rem;
+	margin-bottom: 0.1rem;
+
+	background: url(../../images/zby_images/zby_01.png)no-repeat center center/cover;
+}
+.zby_jzbox .zby_jz .zby_jliz:nth-child(2){
+	
+	background: url(../../images/zby_images/zby_jiao1.png)no-repeat;
+	background-size: 7.16rem 1.85rem;
+}
+.zby_jzbox .zby_jz .zby_jliz:nth-child(3){
+	
+	background: url(../../images/zby_images/zby_jiao2.png) no-repeat;
+	background-size: 7.16rem 1.85rem;
+}
+.zby_jzbox .zby_jz .zby_jliz:nth-child(4){
+	background: url(../../images/zby_images/zby_jiao2.png)no-repeat;
+	background-size: 7.16rem 1.85rem;
+}
+.zby_jzbox .zby_jz .zby_jliz:nth-child(5){
+	
+	background: url(../../images/zby_images/zby_jiao3.png)no-repeat;
+	background-size: 7.16rem 1.85rem;
+}
+.zby_jzbox .zby_jz .zby_jliz:nth-child(6){
+	
+	background: url(../../images/zby_images/zby_jiao1.png)no-repeat;
+	background-size: 7.16rem 1.85rem;
+}
+.zby_jzbox .zby_jliz{
+	display: flex;
+	position: relative;
+}
+.zby_jzbox .zby_jliz .zby_tu{
+	width: 0.43rem;
+	height: 0.43rem;
+	position: absolute;
+	top:-0.1rem;
+	right: -0.04rem;
+	/*background: url(../../images/zby_images/zby_tu.png);*/
+}
+.zby_jzbox .zby_jliz .zby_tu img{
+	width: 0.43rem;
+	height: 0.43rem;
+}
+.zby_jzbox .zby_jliz .zby_jl{
+	width: 2.42rem;
+	height: 100%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.zby_jzbox .zby_jliz .zby_jl img{
+
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.zby_jzbox .zby_jz .zby_jliz .zby_jr{
+		flex:1 0 auto;
+		padding: 0.2rem 0;
+}
+
+.zby_jr .zby_zibox{
+	padding-bottom: 0.1rem;
+	width: 100%;
+	height: auto;
+	border-bottom: 1px dashed #B3A991;
+	display: flex;
+	justify-content:space-between ;
+	align-items:center;
+}
+.zby_jr .zby_zibox .zby_titleft{
+	width: 3.2rem;
+	height: auto;
+}
+.zby_jr .zby_zibox .zby_titleft .zby_title{
+	-webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    display:-webkit-box;
+    overflow:hidden;
+	color: #191919;
+	font-size: 12px;
+	font-weight: bold;
+}
+.zby_jr .zby_zibox .zby_titleft span{
+	display: inline-block;
+	width: 100%;
+
+}
+.zby_jr .zby_zibox .zby_titleft .zby_fubiao{
+	font-size: 10px;
+	color: #656468;
+}
+.zby_jr .zby_zibox .zby_titright{
+	flex:1 0 auto;
+	display: flex;
+	justify-content:center ;
+	align-items:center;
+}
+.zby_jr .zby_zibox .zby_titright img{
+	width: 0.36rem;
+	height: 0.34rem;
+}
+.zby_jr .zby_titlbom{
+	padding-top: 0.1rem;
+	color: #656468;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.zby_jr .zby_titlbom .zby_til{
+	text-align: left;
+
+}
+.zby_jr .zby_titlbom span{
+	font-size: 10px;
+	color: #C7C7C7;
+}
+.zby_jr .zby_titlbom img{
+	width: 0.24rem;
+	height: 0.24rem;
+	margin-right: 0.1rem;
+	
+}
+.zby_jr .zby_titlbom .zby_tir{
+	text-align: right;
+	padding-right: 0.46rem;
+}
+.zby_titlbom .flex{
+
+}
+.zby_p1{
+	display: inline-block;
+	display: inline-flex;
+	align-items:center;
+}
+/*兼职宝典结束*/
+
+/*底部*/
+.foot{
+	padding-top: 0.1rem;
+	box-sizing:border-box;
+	display: flex;
+	align-items:center;
+	justify-content:space-between;
+	position:fixed;
+	bottom: 0;
+	z-index:90;
+	width: 100%;
+	height: 1.57rem;
+	background: url(../../images/bzp/dibeijing.png) no-repeat center center/cover; 
+}
+.foot a{
+	display: block;
+	flex:1 0 auto;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+.foot a:first-child img{
+	width: 1.76rem;
+	height: 1.19rem;
+}
+.foot a:first-child~a img{
+	width:0.96rem;
+	height: 0.99rem;
+}
